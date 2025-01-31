@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #070708;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.slider-container::-webkit-scrollbar {
+  width: 10px;
+}
+.slider-1{
+  width: 250px ;
+}
