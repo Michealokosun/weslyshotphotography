@@ -1,3 +1,3 @@
 export const CustomButton = ({ children, ...props }) => {
-  return <button>{children}</button>;
+  return <button className=" px-5 rounded-md py-2">{children}</button>;
 };

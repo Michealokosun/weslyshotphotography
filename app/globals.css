@@ -30,3 +30,10 @@ body {
 .slider-1{
   width: 250px ;
 }
+
+
+button{
+  background-color: #2F2F37;
+  color: white !important;
+  font-size: small;
+}

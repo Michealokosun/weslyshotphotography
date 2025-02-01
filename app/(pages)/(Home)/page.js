@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       <section className="">
-        <div className="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="mx-auto   max-w-7xl px-2 sm:px-6 lg:px-8">
           <Image
             className="hidden md:block"
             width={1196}
@@ -56,7 +56,7 @@ export default function Home() {
             src="/13.png"
           />
           <Image
-            className="block md:hidden"
+            className="block  md:hidden"
             width={1196}
             height={512}
             alt="bann_ing"
@@ -65,17 +65,48 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="ABOUT_ME_SECTION text-white mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8 ">
-        <div className="aboutme-header">
+      <section className="ABOUT_ME_SECTION mt-16 text-white mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8 ">
+        <div className="aboutme-header flex justify-between flex-col items-start md:flex-row md:items-center gap-5">
           {/* TEXT --- */}
           <div>
-            <span>About</span>
-            <h1 className="capitalize"> i am JohnWesley</h1>
+            <span className="text-xs text-gray-400 capitalize pb-3">About</span>
+            <h1 className="uppercase text-4xl"> i AM JohnWesley</h1>
           </div>
           {/* BUTTON --- */}
-          <CustomButton />
+          <CustomButton>
+            <div className="flex items-center gap-1">
+              <h5>Know More</h5>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </div>
+          </CustomButton>
         </div>
-        <div className="aboutmecontent"></div>
+        <div className="aboutmecontent mt-5">
+          <div className="row flex">
+            <div className="col1">
+              <Image
+                className=" w-full  md:w-80"
+                width={400}
+                height={400}
+                alt="aboutme"
+                src="/aboutme.png"
+              />
+            </div>
+            <div className="col1"></div>
+          </div>
+        </div>
       </section>
     </div>
   );

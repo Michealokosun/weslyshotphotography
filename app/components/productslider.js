@@ -11,7 +11,7 @@ export const ProductSlider = () => {
 
     let scrollAmount = 0; // Current scroll position
     let direction = 1; // 1 for forward, -1 for backward
-    const speed = 3; // Adjust this for faster or slower scrolling
+    const speed = 0.7; // Adjust this for faster or slower scrolling
 
     const animateScrollbar = () => {
       const maxScroll =
