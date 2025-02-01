@@ -94,17 +94,124 @@ export default function Home() {
           </CustomButton>
         </div>
         <div className="aboutmecontent mt-5">
-          <div className="row flex">
+          <div className="row flex items-center flex-col md:flex-row gap-5">
             <div className="col1">
               <Image
-                className=" w-full  md:w-80"
+                className=" block md:hidden w-full  "
                 width={400}
                 height={400}
                 alt="aboutme"
                 src="/aboutme.png"
               />
+              <Image
+                className=" hidden md:block   "
+                width={1900}
+                height={1200}
+                alt="aboutme"
+                src="/aboutme.png"
+              />
             </div>
-            <div className="col1"></div>
+            <div className="col1 border shadow-xl rounded-lg  border-gray-900 p-">
+              <div className="introduction pb-3 border-gray-900 border-b">
+                <h3 className="flex gap-2 p-2 items-center">
+                  {" "}
+                  <Image width={30} height={30} alt="image" src="/star.png" />
+                  Introduction
+                </h3>
+                <p className="text-gray-400 text-sm p-2 mt-5">
+                  My journey as a photographer has been a lifelong quest to
+                  capture the extraordinary in the ordinary, to freeze fleeting
+                  moments in time, and to share the world's beauty as I see it.
+                  Based in the enchanting landscapes of the USA, I find
+                  inspiration in every corner of this diverse and vibrant
+                  country. Join me as we embark on a visual odyssey, where each
+                  photograph tells a story, and every frame is a piece of my
+                  heart.
+                </p>
+              </div>
+              <div className="contact-info mt- p-2">
+                <h3 className="flex capitalize gap-2 items-center">
+                  <Image width={30} height={30} alt="image" src="/star.png" />{" "}
+                  Contact information
+                </h3>
+                <div className="flex mt-5 flex-col md:flex-row gap-8 md:gap-40">
+                  <p className="flex gap-2 flex-col">
+                    <span>Email</span>
+                    <span className="text-sm text-gray-400 lowercase">
+                      SMidjssjxjxth@gmail.com
+                    </span>
+                  </p>
+                  <p className="flex gap-2 flex-col">
+                    <span>Phone Number</span>
+                    <span className="text-xs text-gray-400 lowercase">
+                      +000 000000000
+                    </span>
+                  </p>
+                </div>
+                <div className="socials items-start md:items-center flex justify-between flex-col md:flex-row gap-5 ">
+                  <div className="social-icons flex gap-2 border rounded-full border-gray-900 p-1 mt-5">
+                    <Image
+                      src="/iconfacebook.png"
+                      height={30}
+                      width={40}
+                      alt="facebook"
+                    />
+                    <Image
+                      src="/icontwitter.png"
+                      height={40}
+                      width={40}
+                      alt="facebook"
+                    />
+                    <Image
+                      src="/twitter.png"
+                      height={40}
+                      width={40}
+                      alt="facebook"
+                    />
+                  </div>
+                  <div className="cvs flex-row  flex gap-5 mt-5">
+                    <CustomButton>
+                      <div className="flex items-center  gap-1">
+                        <h5 className="capitalize">let's work</h5>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                          />
+                        </svg>
+                      </div>
+                    </CustomButton>
+                    <CustomButton>
+                      <div className="flex items-center gap-1">
+                        <h5>Download CV</h5>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-5"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                          />
+                        </svg>
+                      </div>
+                    </CustomButton>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
